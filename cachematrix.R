@@ -3,7 +3,7 @@
 ## Coursera - Data Scientist Track
 ## R Programming
 ## Assignment 2 - Lexical Scoping
-## July 24/15
+## August 4, 2015
 ##
 ## Solution Notes
 ## 
@@ -105,7 +105,7 @@
 ##  getinverse() is used to gain access to the currently scoped matrix 
 ##  object.
 ##############################################################################
-makeCacheMatrix <- function(x = matrix()) 
+makcm <- function(x = matrix()) 
 {
     mat <- NULL
 
@@ -135,7 +135,7 @@ makeCacheMatrix <- function(x = matrix())
 ##  manually calculate it, place it in the cache for the next time, and
 ##  return the newly calculate value.
 ##############################################################################
-cacheSolve <- function(x, ...) 
+solvecm <- function(x, ...) 
 {
     ## Return a matrix that is the inverse of 'x'
     mat <- x$getinverse()
